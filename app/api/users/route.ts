@@ -1,10 +1,9 @@
 import User from "@/lib/models/User";
 import { connectDB } from "@/lib/mongoDB";
 import { auth } from "@clerk/nextjs";
-import { NextApiRequest } from "next";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export const GET = async(req:NextApiRequest) => {
+export const GET = async(req:NextRequest) => {
     try {
         const {userId} = auth();
         if (!userId) {
