@@ -17,7 +17,7 @@ export const getCollectionDetails = async (collectionId: string) => {
     })
     return await collection.json()
   }
-export const getProducts = async (query:string) => {
+export const getProducts = async (query?:string) => {
     const products = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/products?query=${query}`,{
         headers: {
             'Cache-Control': 'no-cache'
