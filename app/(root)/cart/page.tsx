@@ -38,11 +38,11 @@ const Cart = () => {
   return (
     <div className="flex gap-20 py-16 px-10 max-lg:flex-col max-sm:px-3">
       <div className="w-2/3 max-lg:w-full">
-        <p className="text-heading3-bold">Shopping Cart</p>
+        <p className="text-heading3-bold">Səbət</p>
         <hr className="my-6" />
 
         {cart.cartItems.length === 0 ? (
-          <p className="text-body-bold">No item in cart</p>
+          <p className="text-body-bold">Səbət boşdur</p>
         ) : (
           <div>
             {cart.cartItems.map((cartItem) => (
@@ -97,14 +97,14 @@ const Cart = () => {
           })`}</span>
         </p>
         <div className="flex justify-between text-body-semibold">
-          <span>Total Amount</span>
-          <span>$ {totalRounded}</span>
+          <span>Yekun məbləğ </span>
+          <span>{totalRounded} AZN</span>
         </div>
         <button
           className="border rounded-lg text-body-bold bg-white py-3 w-full hover:bg-black hover:text-white"
           onClick={handleCheckout}
         >
-          Proceed to Checkout
+          Ödəniş et
         </button>
       </div>
     </div>
