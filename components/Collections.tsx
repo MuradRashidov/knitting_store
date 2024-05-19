@@ -11,7 +11,7 @@ const Collections = async () => {
       <p className="text-heading1-bold">
         Collections
       </p>
-      <div className="flex justify-center items-center gap-8">
+      <div className="flex flex-wrap justify-center items-center gap-8">
         {!collections || collections.length === 0 ? <p className='text-body-bold'>No collection found</p>
         :collections.map((collection: CollectionType) => (
           <Link href={`/collections/${collection._id}`} key={collection._id}>

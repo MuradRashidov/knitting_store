@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <Image src="/banner.png" width={2000} height={500} alt="knitting_store" className="w-screen"/>
+      <Image src="/banner_.png" width={2000} height={500} alt="knitting_store" className="w-screen"/>
       <Collections/>
       <ProductList/>
     </div>

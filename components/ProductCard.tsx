@@ -58,8 +58,8 @@ const ProductCard = ({product,updateSignedInUser}:ProductCardProps) => {
         }
     }
   return (
-    <div onClick={()=>{router.push(`/products/${product._id}`)}} className='w-[220px] flex flex-col gap-2]'>
-        <Image style={{height:"300px"}} src={product.media[0]} alt={product.title} width={250} height={300} className='h-300 !important object-cover rounded-lg'/>
+    <div onClick={()=>{router.push(`/products/${product._id}`)}} className='w-[220px] flex flex-col gap-2 cursor-pointer]'>
+        <Image style={{height:"300px"}} src={product.media[0]} alt={product.title} width={250} height={300} className='h-300 !important object-cover cursor-pointer rounded-lg'/>
         <div>
             <p className='text-base-bold'>{product.title}</p>
             <p className='text-small-medium text-grey-2'>{product.category}</p>
