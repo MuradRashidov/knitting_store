@@ -8,7 +8,7 @@ const Collections = async () => {
 
   return (
     <div className="flex flex-col items-center gap-8">
-      <p className="text-heading1-bold">
+      <p className="text-heading2-bold">
         Collections
       </p>
       <div className="flex flex-wrap justify-center items-center gap-8">
