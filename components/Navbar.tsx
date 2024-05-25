@@ -38,7 +38,7 @@ const Navbar = () => {
             pathname === "/wishlist" && "text-red-1"
           }`}
         >
-          İstək siyahısı
+          Seçilmişlər
         </Link>
         <Link
           href={user ? "/orders" : "/sign-in"}
@@ -77,7 +77,7 @@ const Navbar = () => {
               href={user ? "/wishlist" : "/sign-in"}
               className="hover:text-red-1"
             >
-              İstək siyahısı
+              Seçilmişlər
             </Link>
             <Link
               href={user ? "/orders" : "/sign-in"}
@@ -90,7 +90,7 @@ const Navbar = () => {
               className="flex items-center gap-3 border rounded-lg px-2 py-1 hover:bg-black hover:text-white"
             >
               <ShoppingCart />
-              <p className="text-base-bold">Cart ({cart.cartItems.length})</p>
+              <p className="text-base-bold">Səbət ({cart.cartItems.length})</p>
             </Link>
           </div>
         )}
