@@ -64,10 +64,10 @@ const Navbar = () => {
         <div className="flex gap-2 items-center relative">
             <Link href="/cart" className="flex items-center gap-3 border rounded-lg px-2 py-1 hover:bg-black hover:text-white max-md:hidden">
                 <ShoppingCart/>
-                <p className="text-base-bold">Cart ({cart.cartItems.length})</p>
+                <p className="text-base-bold">Səbət ({cart.cartItems.length})</p>
             </Link>
          
-         {user &&   <Menu onClick={()=>setDropdownMenu(!dropdownMenu)} className="cursor-pointer"/>}
+         {user &&   <Menu onClick={()=>setDropdownMenu(!dropdownMenu)} className="cursor-pointer lg:hidden"/>}
          {dropdownMenu && (
           <div className="absolute top-12 right-5 flex flex-col gap-4 p-3 rounded-lg border bg-white text-base-bold lg:hidden">
             <Link href="/" className="hover:text-red-1">
