@@ -20,9 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-          <link rel="shortcut icon" href="/favicon.png" />
-      </Head>
       <body className={inter.className}>
         <ClerkProvider>
             <ToasterProvider/>

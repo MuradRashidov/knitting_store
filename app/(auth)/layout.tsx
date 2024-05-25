@@ -19,9 +19,6 @@ export default function RootLayout({
   return (
     <ClerkProvider>
     <html lang="en">
-    <Head>
-          <link rel="shortcut icon" href="/favicon.png" />
-    </Head>
       <body className={inter.className}>{children}</body>
     </html>
     </ClerkProvider>
