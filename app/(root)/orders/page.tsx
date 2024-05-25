@@ -11,10 +11,10 @@ const Orders = async () => {
 
   return (
     <div className="px-10 py-5 max-sm:px-3">
-      <p className="text-heading3-bold my-10">Your Orders</p>
+      <p className="text-heading3-bold my-10">Sifarişlərim</p>
       {!orders ||
         (orders.length === 0 && (
-          <p className="text-body-bold my-5">You have no orders yet.</p>
+          <p className="text-body-bold my-5">0 sifariş</p>
         ))}
 
       <div className="flex flex-col gap-10">

@@ -54,9 +54,9 @@ const Wishlist = () => {
   }
   return loading ? <Loader /> : (
     <div className="px-10 py-5">
-      <p className="text-heading3-bold my-10">Your Wishlist</p>
+      <p className="text-heading3-bold my-10">İstək siyahısı</p>
       {wishlist.length === 0 && (
-        <p>No items in your wishlist</p>
+        <p>İstək siyahısı boşdur</p>
       )}
 
       <div className="flex flex-wrap justify-center gap-16">
