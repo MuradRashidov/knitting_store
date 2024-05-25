@@ -4,6 +4,7 @@ import "../globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
 import ToasterProvider from "@/lib/providers/ToasterProvider";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+          <link rel="shortcut icon" href="/favicon.png" />
+      </Head>
       <body className={inter.className}>
         <ClerkProvider>
             <ToasterProvider/>

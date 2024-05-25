@@ -30,7 +30,7 @@ const Navbar = () => {
             pathname === "/" && "text-red-1"
           }`}
         >
-          Home
+          Ana səhifə
         </Link>
         <Link
           href={user ? "/wishlist" : "/sign-in"}
@@ -38,7 +38,7 @@ const Navbar = () => {
             pathname === "/wishlist" && "text-red-1"
           }`}
         >
-          Wishlist
+          İstək siyahısı
         </Link>
         <Link
           href={user ? "/orders" : "/sign-in"}
@@ -46,7 +46,7 @@ const Navbar = () => {
             pathname === "/orders" && "text-red-1"
           }`}
         >
-          Orders
+          Sifarişlərim
         </Link>
       </div>
       <div className="flex gap-3 border border-grey-2 px-3 py-1 items-center rounded-lg">
@@ -71,19 +71,19 @@ const Navbar = () => {
          {dropdownMenu && (
           <div className="absolute top-12 right-5 flex flex-col gap-4 p-3 rounded-lg border bg-white text-base-bold lg:hidden">
             <Link href="/" className="hover:text-red-1">
-              Home
+              Ana səhifə
             </Link>
             <Link
               href={user ? "/wishlist" : "/sign-in"}
               className="hover:text-red-1"
             >
-              Wishlist
+              İstək siyahısı
             </Link>
             <Link
               href={user ? "/orders" : "/sign-in"}
               className="hover:text-red-1"
             >
-              Orders
+              Sifarişlərim
             </Link>
             <Link
               href="/cart"
